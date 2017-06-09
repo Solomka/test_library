@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Yaremko_Library</display-name>
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>servlets.LoginPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>bookOrder</servlet-name>
+		<servlet-class>servlets.BookOrderPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>createOrder</servlet-name>
+		<servlet-class>servlets.CreateOrderPage</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>myOrder</servlet-name>
+		<servlet-class>servlets.MyOrders</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>orderDetails</servlet-name>
+		<servlet-class>servlets.OrderDetails</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>allOrders</servlet-name>
+		<servlet-class>servlets.AllOrders</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>executeOrder</servlet-name>
+		<servlet-class>servlets.ExecuteOrder</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>allOrdersExecute</servlet-name>
+		<servlet-class>servlets.AllOrdersExecute</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/LoginPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>bookOrder</servlet-name>
+		<url-pattern>/BookOrderPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>createOrder</servlet-name>
+		<url-pattern>/CreateOrderPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>myOrder</servlet-name>
+		<url-pattern>/MyOrders</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>orderDetails</servlet-name>
+		<url-pattern>/OrderDetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>allOrders</servlet-name>
+		<url-pattern>/AllOrders</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>executeOrder</servlet-name>
+		<url-pattern>/ExecuteOrder</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>allOrdersExecute</servlet-name>
+		<url-pattern>/AllOrdersExecute</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Library.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
